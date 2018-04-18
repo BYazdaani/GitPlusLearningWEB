@@ -1,0 +1,34 @@
+<!--
+    ************** Season 4:DOM *****************
+                   part:2 
+               1396/12/06   Sunday                           
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Work with Element</title>
+</head>
+<body>
+    <h1 style="color:red;text-aling:center">Java Script:DOM,Element Properties</Script></h1>
+    <h1 style="color:red;text-aling:center">1396/12/06</Script></h1>
+    <div>
+        <button id="mybtn1" onclick="TestEventListner1()">Test EventListner1</button>
+        <h2 id="demo">Test event listner</h2>
+        <button id="mybtn2" onclick="TestEventListner2()">Test EventListner2</button>
+    </div>
+    <script type="text/javascript">
+    function TestEventListner1(){
+        var x=document.getElementById("mybtn1");
+        x.addEventListener("click",function(){
+            document.getElementById("demo").innerHTML="Test eventlistner Is OK";
+        })
+    }
+    function TestEventListner2(){
+        var str="Test Event Listner2 Clicked"
+        document.getElementById("mybtn2").click(alert(str));
+        
+    }
+    </script>
+</body>
+</html>

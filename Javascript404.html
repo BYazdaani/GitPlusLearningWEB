@@ -1,0 +1,56 @@
+<!--
+    ************** Season 4:DOM *****************
+               1396/12/04   friday                           
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Templet</title>
+</head>
+<body>
+    <h1 style="color:red;text-aling:center">Java Script:DOM,Event Properties</Script></h1>
+    <h1 style="color:red;text-aling:center">1396/12/07</Script></h1>
+    
+    <button onclick="testOnClick()">Test Click</button>
+    <hr/>
+    <button ondblclick="TestdblClick()">Test dbClick</button>
+    <hr/>
+    <P>Test KeyPress</P><INPUT onkeypress="TestKeyPress()"></>
+    <P>Accept Number</P><INPUT onkeypress="return isNumberKey(event)"></>
+    <hr/>
+    <h3 style="color:red" >Work with drag event</h3>
+    <div>
+        <P>Test Drag</P>
+    </div>
+    <div>
+        <P></P>
+    </div>
+    <hr/>
+    <h3 style="color:red" >Work Clipboard Event</h3>
+    <div>
+        <input onCopy="TestCopy()" type="text" value="TestCopy" />
+    </div>
+<script type="text/javascript">
+    function testOnClick(){
+        alert("click");
+    }
+    function TestdblClick(){
+        alert("Test dbClick");
+    }
+    function TestKeyPress(){
+        alert("Test Keypress");
+    }
+    function isNumberKey(evn){
+        var char=(evn.which)?evn.which:evn.keycode;
+        if(char>31 && (char<48 || char>57)){
+            return false;
+            return true;
+        }
+    }
+    function TestCopy(){
+        alert("This text is copy!");
+    }
+</script>    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype <!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+   <!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+    <title>Window Object Methods</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <style>
+      .MyButton {background-color: aquamarine;font-family: tahoma;height: 50px}
+    </style>
+    
+</head>
+<body style="width:5000px">
+   
+    <h1 style="text-align:center;color:red">Window Object Methods</h1>
+   <!--*****************   Alert prompt confirm  -->
+    <button class="MyButton" onclick="Alert_Prompt_Confirm()">Test alert prompt confirm</button>
+    
+    <!--****************   Test  ScrollBy & ScrollTo                              -->
+    <P>Scroll By</P>
+    <p>Scroll To</p>
+    <button onclick="ScrollBy_Test()" style="position:fixed;font-family:Tahoma;color:red">Scroll By</button>
+    <br/>
+    <button onclick="ScrollTo_Test()" style="position:fixed;font-family:Tahoma;color:red">Scroll To</button>
+    <!-- ************** Test setInterval           ******************************-->
+    <br/>
+    <button onclick="TestSetInterval()">Test setInterval</button>
+   
+   <script type="text/javascript">
+   
+    //
+    function Alert_Prompt_Confirm(){ 
+      var num1=window.prompt("Insert first Number:",0);
+      var num2=window.prompt("Insert second Number:",0);
+      var result=parseInt(num1)+parseInt(num2);
+      var num3=window.confirm("آیا خروجی ارسال شود؟");
+      if (num3){
+          window.alert(result);
+      }
+    }
+    //
+    function ScrollBy_Test(){
+            window.scrollBy(100,0);
+    }  
+    function ScrollTo_Test(){
+            window.scrollTo(500,0);
+    }  
+    //
+    function TestSetInterval(){
+            window.setInterval(function(){alert("Test Set Interval")},3000);
+    }
+    
+
+    </script>  
+</body>
+</html>

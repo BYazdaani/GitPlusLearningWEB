@@ -1,0 +1,53 @@
+ <!--*************** 1396/12/01 S:3 part:3  **********************-->
+
+<!doctype html>
+<html>
+<head>
+
+<style>
+h1{text-align:center;color:red}
+</style>    
+
+</head>
+<body>
+    <h1  >Seeson 3 Part 3</h1>
+    </br>
+    <button style="height:40px" onclick="ScreenProperty()">Test Screen Object Property</button>
+    <button style="height:40px" onclick="LocationProperty()">Test Location Object Property</button>
+    <button style="height:40px" onclick="NavigatorProperty()">Test Navigator Object Property</button>
+
+    <script type="text/javascript">
+        function ScreenProperty(){
+            alert('Screen Width: ' + screen.width);
+            alert('Screen Available: '  + screen.availWidth);
+            alert('Screen Height: '+ screen.height);
+            alert('Screen Available Height: ' + screen.availHeight);
+        }
+
+    function LocationProperty(){
+            alert('Location Protocol: ' + window.location.protocol );
+            alert('Location Port: '  + window.location.port);
+            alert('Location pathname: '  + window.location.pathname);
+            alert('Location Origin: '  + window.location.origin);
+            alert('Location Href: '  + window.location.href);
+            alert('Location Host: '  + window.location.host);
+            alert('Location HostName: '  + window.location.hostname);
+        }
+    function NavigatorProperty(){
+            alert('Browser CodeName: ' + navigator.appCodeName);
+            alert('Browser Name: ' + navigator.appName);
+            alert('Browser Version: ' + navigator.appVersion);
+            alert('Browser product: ' + navigator.product);
+            alert('Browser cookieEnabled: ' + navigator.cookieEnabled);
+            alert('Browser language: ' + navigator.language);
+            alert('Browser platform: ' + navigator.platform);
+            alert('Browser onLine: ' + navigator.onLine);
+            alert('Browser userAgent: ' + navigator.userAgent);
+
+
+        }
+                
+    </script>
+</body>
+
+</html>

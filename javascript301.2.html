@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+ 
+</head>
+
+<body>
+    
+    <iframe width="420" height="600" src="http://www.mul.ir/linktrans"></iframe>
+    <iframe src="http://www.mul.ir/torrent"></iframe>
+    
+    <button onclick="testframe()">Change frame location</button>
+    <button onclick="printXYwindow()">print XY window()</button>
+    <button onclick="printwindowNAME()">Window Name()</button>
+    
+
+    <script type="text/javascript">
+
+    //چاپ طول و عرض پنجره بدون اسکرول و نوار ابزار
+    function printXYwindow(){
+        alert("Height=" + window.innerHeight + "    Width=" + window.innerWidth + "   طول و عرض پنچره بدون اسکرول و نوار ابزار" );
+    }
+
+    function testframe(){
+        window.frames[0].location="http://www.mul.ir/torrent";
+    }
+
+    function printwindowNAME(){
+        alert("Window Name:" + window.name);
+    }
+
+    </script>
+
+</body>
+</html>

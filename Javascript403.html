@@ -1,0 +1,47 @@
+<!--
+    ************** Season 4:DOM *****************
+               1396/12/06   friday                           
+-->
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Attribute Objec</title>
+</head>
+
+<body>
+        <h1 style="color:red;text-aling:center">Java Script:DOM,Attribute Properties</Script></h1>
+        <h1 style="color:red;text-aling:center">1396/12/06</Script></h1>
+    
+
+<div>
+    <p >1-IsId</p>
+    <p id="test1">Result</p>
+    <button class="mybutton" onclick="TestIsId()">Test IsID</button>
+</div>
+<hr/>
+
+<div>
+    <p >2-Name</p>
+    <p id="test2">Result</p>
+    <button class="mybutton" onclick="TestName()">Test IsID</button>
+</div>
+<hr/>
+
+<script type="text/javascript">
+function TestIsId(){
+    var x=document.getElementByID("test1");
+    //var x=btn.attributes[0].name;
+    x.innerHTML=x.innerHTML+x.attributes[0].isid;//true     همه مرورگرها پشتیبانی نمبکنند
+}
+
+function TestName(){
+    var btn=document.getElementsByTagName("BUTTON")[0];
+    var x=btn.attributes[0].name;
+    document.getElementById("test1").innerHTML="Attribute Name:"+x;
+
+}
+
+</script>
+</body>
+</html>
